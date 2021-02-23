@@ -13,18 +13,26 @@ form {
 
 input {
   width: 555px;
-  border-color: lightgray;
+  border-color: rgb(224, 224, 224);
+  border-width: 1px;
+  border-radius: 45px;
 }
 
-input:hover{
-  box-shadow: 1px 1px 1px 1px lightgray;
+form :hover {
+  box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
+  border-radius: 45px;
+}
+
+form :active {
+  color: rgb(224, 224, 224);
 }
 
 .thin-gray-border {
-    border-color: lightgray;
-    border-width: 0px;
+    color: rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
+    border-width: 1px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 45px;
   }
 
 h1 button {
@@ -71,7 +79,8 @@ h2 button {
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
   </head>
   <p>
-    <form class="thin-gray-border" action="#"><input :hover type="text" placeholder="search"></form>
+    <form :hover :active class="thin-gray-border" action="#">
+      <input type="text" placeholder="Search"></form>
   </p>
   <h1>
     <button type="google-search">Google Search</button>
@@ -79,11 +88,13 @@ h2 button {
   <h2>
     <button type="I'm feeling lucky">I'm Feeling Lucky</button>
   </h2>
+  <header>
   <div class="navbar">
     <a href="#about">About</a>
     <a href="#store">Store</a>
     <a href="gmail">Gmail</a>
   </div>
+  </header>
   <div class="navbar">
     <a href="#home" class="active">Home</a>
     <a href="#news">News</a>

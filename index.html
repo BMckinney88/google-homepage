@@ -9,6 +9,7 @@ form {
     display: flex;
     height: 50px;
     float: left;
+    border-color: rgb(224, 224, 224);
 }
 
 input {
@@ -19,17 +20,21 @@ input {
 }
 
 form :hover {
-  box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
+  box-shadow: 1px 2px 2px 1px rgb(224, 224, 224);
   border-radius: 45px;
+  border-top: 5px;
 }
 
-form :active {
+form:active {
   color: rgb(224, 224, 224);
+}
+
+*:focus {
+    outline: 0 !important;
 }
 
 .thin-gray-border {
     color: rgb(224, 224, 224);
-    border-color: rgb(224, 224, 224);
     border-width: 1px;
     border-style: solid;
     border-radius: 45px;
@@ -56,22 +61,36 @@ h2 button {
   font-size: 14px;
   color: rgb(77, 72, 72);
 }
-.navbar {
+header {
   overflow: hidden;
   background-color: #fff;
   position: fixed; 
   top: 0; 
   width: 100%;
 }
+
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: rgb(61, 61, 61);
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 22px;
   text-decoration: none;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.navbar:hover {
+  text-underline-position: under;
+  color: black;
+}
+
+footer {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
 }
 </style>
 <html>
@@ -90,14 +109,16 @@ h2 button {
   </h2>
   <header>
   <div class="navbar">
-    <a href="#about">About</a>
-    <a href="#store">Store</a>
+    <a href="about">About</a>
+    <a href="store">Store</a>
     <a href="gmail">Gmail</a>
   </div>
   </header>
+  <footer>
   <div class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+    <a href="home" class="active">Home</a>
+    <a href="news">News</a>
+    <a href="contact">Contact</a>
   </div>
+  </footer>
 </html>

@@ -153,7 +153,7 @@ ul {
   font-family: Arial, sans-serif;
   border-color: white;
   border-style: hidden;
-  background-color: rgb(248, 248, 248);
+  background-color: white;
   font-size: 13px;
   right: 100px;
 }
@@ -163,48 +163,55 @@ li a {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: rgb(240, 240, 240);
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
+  left: 0px;
+  text-indent: 0px;
 }
 .navbar a {
   float: left;
   display: block;
-  color: #000000;
+  color: rgb(114, 114, 114);
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 10px;
   text-decoration: none;
   font-size: 14px;
   font-family: arial;
+  background-color: rgb(240, 240, 240);
+  margin-right: -15px;
+  margin-left: 25px;
 }
 .navbar a:hover {
   background-color: #fff;
-  color: black;
+  color: rgb(114, 114, 114);
 }
 .navbar a.active {
   background-color: #ffffff;
-  color: black;
+  color: rgb(114, 114, 114);
+  background-color: rgb(240, 240, 240);
 }
 .navbar :last-child {
   border-right: none;
-  margin-right: 550px;
+  margin-right: 548px;
   font-size: 14px;
 }
 
 .list {
   bottom: 15px;
   position: fixed;
-  right: 25px;
-  margin-right: 10px;
+  right: 15px;
+  margin-right: 7px;
+  margin-left: 20;
   font-family: arial;
   font-size: 14px;
 }
 .list a {
-  color: #000000;
+  color: rgb(114, 114, 114);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 13px;
   text-decoration: none;
   font-size: 14px;
   font-family: arial;
@@ -240,13 +247,13 @@ li a {
   <div class="navbar">
     <a href="#home" class="active">Advertising</a>
     <a href="#news">Business</a>
-    <a href="#contact">How Search Works</a>
-    <a style="float:right" href="carbon neutral since 2007">Carbon Neutral Since 2007</a>
+    <a href="#contact">How Search works</a>
+    <a style="float:right" href="carbon neutral since 2007">Carbon neutral since 2007</a>
   </div>
 </hr>
 <div class="list">
   <a href="privacy">Privacy</a>
   <a href="terms">Terms</a>
-  <a href="setting">Setting</a>
+  <a href="setting">Settings</a>
 </div>
 </html>
